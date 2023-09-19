@@ -13,7 +13,7 @@ public class WeatherData {
 
     public String fetchData() throws IOException {
         StringBuilder urlBuilder = new StringBuilder("http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst");
-        urlBuilder.append("?" + URLEncoder.encode("serviceKey", "UTF-8") + "=aiaOTjntQeugeUqu34eA4jER2STTGwR8BH6L0sGtXwMNHE%2FsZyvuXMyhUFZKe%2BI9LzJA%2BIG3eNxC2xXqCb5MEQ%3D%3D");
+        urlBuilder.append("?" + URLEncoder.encode("serviceKey", "UTF-8") + "key");
         urlBuilder.append("&" + URLEncoder.encode("pageNo", "UTF-8") + "=" + URLEncoder.encode("1", "UTF-8"));
         urlBuilder.append("&" + URLEncoder.encode("numOfRows", "UTF-8") + "=" + URLEncoder.encode("12", "UTF-8"));
         urlBuilder.append("&" + URLEncoder.encode("dataType", "UTF-8") + "=" + URLEncoder.encode("XML", "UTF-8"));

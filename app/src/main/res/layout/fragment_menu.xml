@@ -126,7 +126,7 @@
                     android:layout_height="match_parent"
                     android:textSize="18sp"
                     android:text="챗봇 \n방파제"
-                    android:textStyle="bold"/>
+                    android:fontFamily="@font/elicedigitalbaeum_bold"/>
 
             </LinearLayout>
 
@@ -153,7 +153,7 @@
                     android:layout_height="match_parent"
                     android:textSize="18sp"
                     android:text="운전 상태\n설정"
-                    android:textStyle="bold"/>
+                    android:fontFamily="@font/elicedigitalbaeum_bold"/>
 
             </LinearLayout>
 
@@ -180,7 +180,7 @@
                     android:layout_height="match_parent"
                     android:textSize="18sp"
                     android:text="설정"
-                    android:textStyle="bold"/>
+                    android:fontFamily="@font/elicedigitalbaeum_bold"/>
 
             </LinearLayout>
 
@@ -207,7 +207,7 @@
                     android:layout_height="match_parent"
                     android:textSize="18sp"
                     android:text="알림 설정"
-                    android:textStyle="bold"/>
+                    android:fontFamily="@font/elicedigitalbaeum_bold"/>
 
             </LinearLayout>
 

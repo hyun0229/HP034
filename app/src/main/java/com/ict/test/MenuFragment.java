@@ -91,7 +91,7 @@ public class MenuFragment extends Fragment {
         protected String doInBackground(Void... params) {
             // ApiExplorer 클래스를 사용하여 데이터 가져오기
 
-            WeatherData weatherData = new WeatherData("202300918","1700");
+            WeatherData weatherData = new WeatherData("20230918","1700");
 
             try {
                 // XML 파싱 및 표시
