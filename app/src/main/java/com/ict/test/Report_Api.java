@@ -27,7 +27,7 @@ public class Report_Api {
                 .baseUrl(server_url) // PHP 서버의 기본 URL을 입력합니다.
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-
+//
 // ApiService 인터페이스의 인스턴스 생성
         ApiService apiService = retrofit.create(ApiService.class);
 
