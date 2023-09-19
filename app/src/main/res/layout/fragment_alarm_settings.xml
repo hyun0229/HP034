@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmSettingsFragment"
+    android:background="#006FFD"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_back_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_back" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background_top">
+        <LinearLayout
+            android:layout_marginTop="37dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#B4DBFF"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bell"/>
+            <TextView
+                android:fontFamily="@font/omt"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="챗봇 알림 사운드 및 진동 설정"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#EAF2FF"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:text="운전&amp;보행알림 사운드"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/elicedigitalbaeum_regular" />
+            <SeekBar
+                android:id="@+id/chat_Sound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="100"
+                android:progress="50" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#EAF2FF"
+            android:orientation="horizontal">
+            <TextView
+                android:fontFamily="@font/elicedigitalbaeum_regular"
+                android:layout_marginLeft="5dp"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:text="운전&amp;보행알림 진동"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                 />
+            <SeekBar
+                android:id="@+id/chat_Vib"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="100"
+                android:progress="50" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#B4DBFF"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/handlepng"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="운전&amp;보행 설정 변경"
+                android:textSize="25dp"
+                android:fontFamily="@font/omt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#EAF2FF"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:text="운전&amp;보행알림 사운드"
+                android:textSize="17dp"
+                android:fontFamily="@font/elicedigitalbaeum_bold" />
+            <SeekBar
+                android:id="@+id/drive_Sound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="100"
+                android:progress="50" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#EAF2FF"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:text="운전&amp;보행알림 진동"
+                android:textSize="17dp"
+                android:fontFamily="@font/elicedigitalbaeum_bold" />
+            <SeekBar
+                android:id="@+id/drive_Vib"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="100"
+                android:progress="50" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- LinearLayout 배경 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#000000" /> <!-- LinearLayout의 전체 배경 색상 -->
+        </shape>
+    </item>
+    <!-- 아래 모서리에 검은색을 입히기 위한 선 -->
+    <item android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#E0E0E0" /> <!-- 아래 모서리 색상 (검은색) -->
+        </shape>
+    </item>
+</layer-list>
