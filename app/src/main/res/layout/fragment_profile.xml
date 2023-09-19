@@ -11,7 +11,7 @@
         android:layout_height="183dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="#696969" >
+        android:background="#006FFD" >
         <ImageButton
             android:id="@+id/btn_back_profile"
             android:layout_marginTop="10dp"
@@ -48,7 +48,8 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
-            android:text="이름" />
+            android:text="⦁ 이름"
+            android:fontFamily="@font/elicedigitalbaeum_regular"/>
 
         <TextView
             android:id="@+id/UserName"
@@ -58,7 +59,8 @@
             android:layout_marginRight="30dp"
             android:background="@drawable/rounded_background"
             android:text="   이름"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            android:fontFamily="@font/elicedigitalbaeum_regular"/>
 
         <TextView
             android:layout_width="wrap_content"

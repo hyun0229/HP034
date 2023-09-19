@@ -113,7 +113,8 @@
                 android:layout_height="match_parent"
                 android:text="운전&amp;보행 설정 변경"
                 android:textSize="25dp"
-                android:fontFamily="@font/omt" />
+                android:fontFamily="@font/omt"
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <LinearLayout
@@ -129,7 +130,8 @@
                 android:layout_height="match_parent"
                 android:text="운전&amp;보행알림 사운드"
                 android:textSize="17dp"
-                android:fontFamily="@font/elicedigitalbaeum_bold" />
+                android:fontFamily="@font/elicedigitalbaeum_regular"
+                android:textStyle="bold"/>
             <SeekBar
                 android:id="@+id/drive_Sound"
                 android:layout_width="match_parent"
@@ -150,7 +152,8 @@
                 android:layout_height="match_parent"
                 android:text="운전&amp;보행알림 진동"
                 android:textSize="17dp"
-                android:fontFamily="@font/elicedigitalbaeum_bold" />
+                android:fontFamily="@font/elicedigitalbaeum_regular"
+                android:textStyle="bold"/>
             <SeekBar
                 android:id="@+id/drive_Vib"
                 android:layout_width="match_parent"
