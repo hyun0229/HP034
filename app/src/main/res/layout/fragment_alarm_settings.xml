@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="63dp"
+        android:layout_height="65dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:orientation="horizontal">
@@ -40,13 +40,12 @@
                 android:layout_height="30dp"
                 android:background="@drawable/bell"/>
             <TextView
-                android:fontFamily="@font/omt"
                 android:layout_marginLeft="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="챗봇 알림 사운드 및 진동 설정"
                 android:textSize="25dp"
-                android:textStyle="bold"
+                android:fontFamily="@font/omt"
                  />
         </LinearLayout>
 
@@ -113,8 +112,7 @@
                 android:layout_height="match_parent"
                 android:text="운전&amp;보행 설정 변경"
                 android:textSize="25dp"
-                android:fontFamily="@font/omt"
-                android:textStyle="bold"/>
+                android:fontFamily="@font/omt" />
         </LinearLayout>
 
         <LinearLayout

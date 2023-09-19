@@ -27,6 +27,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:orientation="vertical"
+      android:backgroundTint="@color/white"
       android:background="@drawable/rounded_background_top">
       <LinearLayout
           android:layout_width="match_parent"
@@ -55,7 +56,10 @@
                   android:text="운전중"/>
           </LinearLayout>
           <TextView
+              android:layout_marginTop="10dp"
               android:id="@+id/testspeed"
+              android:fontFamily="@font/omt"
+              android:textSize="20dp"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:text="현재 속도 : "/>
