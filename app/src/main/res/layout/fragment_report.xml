@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#006FFD"
+    tools:context=".ReportFragment">
+    <LinearLayout
+        android:id="@+id/rectangle_4"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btn_back_driving"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_back"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_background_top"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_gravity="start"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="10dp"
+            android:text="⦁ 제보내역"
+            android:textColor="#006FFD"
+            android:textSize="25sp"
+            android:fontFamily="@font/omt" />
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_rectangle"
+            android:padding="10dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="#B4DBFF"
+                android:padding="10dp">
+
+                <TextView
+                    android:fontFamily="@font/elicedigitalbaeum_regular"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="start"
+                    android:text="날짜"
+                    android:textSize="15sp"
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_background_top">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="start"
+                        android:gravity="center_vertical"
+                        android:text="내용"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/reportiamge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

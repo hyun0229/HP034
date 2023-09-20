@@ -51,6 +51,8 @@
             android:fontFamily="@font/elicedigitalbaeum_regular"/>
 
         <TextView
+            android:gravity="center_vertical"
+            android:layout_gravity="start"
             android:id="@+id/UserName"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -58,7 +60,7 @@
             android:layout_marginRight="30dp"
             android:background="@drawable/rounded_background"
             android:text="   이름"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:fontFamily="@font/elicedigitalbaeum_regular"/>
 
         <TextView
@@ -71,6 +73,8 @@
             android:fontFamily="@font/elicedigitalbaeum_regular"/>
 
         <TextView
+            android:gravity="center_vertical"
+            android:layout_gravity="start"
             android:id="@+id/UserEmail"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -78,7 +82,7 @@
             android:layout_marginRight="30dp"
             android:background="@drawable/rounded_background"
             android:text="   Email"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:fontFamily="@font/elicedigitalbaeum_regular"/>
 
         <TextView
@@ -91,6 +95,8 @@
             android:fontFamily="@font/elicedigitalbaeum_regular"/>
 
         <TextView
+            android:gravity="center_vertical"
+            android:layout_gravity="start"
             android:id="@+id/UserPhoneNumber"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -98,7 +104,7 @@
             android:layout_marginRight="30dp"
             android:background="@drawable/rounded_background"
             android:text="   PhoneNumber"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:fontFamily="@font/elicedigitalbaeum_regular"/>
 
         <LinearLayout

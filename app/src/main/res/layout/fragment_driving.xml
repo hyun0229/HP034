@@ -42,8 +42,8 @@
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/omt"
-                  android:text="보행중"
-                  android:textSize="30sp"/>
+                  android:text="보행중    "
+                  android:textSize="26dp"/>
               <Switch
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
@@ -52,14 +52,14 @@
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/omt"
-                  android:textSize="30sp"
-                  android:text="운전중"/>
+                  android:textSize="26dp"
+                  android:text="    운전중"/>
           </LinearLayout>
           <TextView
               android:layout_marginTop="10dp"
               android:id="@+id/testspeed"
               android:fontFamily="@font/omt"
-              android:textSize="20dp"
+              android:textSize="18dp"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:text="현재 속도 : "/>
