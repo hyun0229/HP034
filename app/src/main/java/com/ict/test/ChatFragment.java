@@ -148,9 +148,11 @@ public class ChatFragment extends Fragment {
             String question = messageEditText.getText().toString().trim();
             addToChat(question, Message.SENT_BY_ME);
             messageEditText.setText("");
-            addResponse(test_answe(question));
+            test_answe(question);
 
-            sendMessageToLex(question);
+
+
+            //sendMessageToLex(question);
 
             System.out.println("질문" + question);
             welcomeTextView.setVisibility(View.GONE);
@@ -170,10 +172,16 @@ public class ChatFragment extends Fragment {
 
     }
 
-    public String test_answe(String send) {
-        messageList.add(new Message("입력중... ", Message.SENT_BY_BOT, null));
+    public void test_answe(String send) {
+        messageList.add(new Message("입력중... ", Message.SENT_BY_BOT, null));    new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
 
-        return "test";
+                addResponse("제보가 완료되었습니다.");
+            }
+        }, 1000); // 1000 밀리초(1초) 후에 실행
+
+
     }
 
     public void sendMessageToLex(String question) {

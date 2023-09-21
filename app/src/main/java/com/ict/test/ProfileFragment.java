@@ -31,7 +31,7 @@ public class ProfileFragment extends Fragment {
     public TextView userName, userEmail, userPhone;
     public Button logoutBtn;
     public ImageView userProfile;
-    public ImageButton btn_back;
+    public ImageButton btn_back,btn_report;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
@@ -47,6 +47,15 @@ public class ProfileFragment extends Fragment {
             public void onClick(View v) {
                 MainActivity mainActivity =(MainActivity) getActivity();
                 mainActivity.commit_MenuFragment();
+                closeFragment();
+            }
+        });
+        btn_report = v.findViewById(R.id.btn_comitReport);
+        btn_report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivity mainActivity = (MainActivity) getActivity();
+                mainActivity.commit_ReportFragment();
                 closeFragment();
             }
         });
@@ -74,8 +83,11 @@ public class ProfileFragment extends Fragment {
             @Override
             public Unit invoke(User user, Throwable throwable) {
                 if (user != null){
-                    userName.setText(user.getKakaoAccount().getProfile().getNickname());
-                    userEmail.setText(user.getKakaoAccount().getEmail());
+                    userName.setText("  "+user.getKakaoAccount().getProfile().getNickname());
+                    //userEmail.setText(user.getKakaoAccount().getEmail());
+                    userEmail.setText("  example@google.com");
+                    userPhone.setText("  010 - 9999- 9999");
+
                     Glide.with(userProfile).load(user.getKakaoAccount().getProfile().getThumbnailImageUrl()).circleCrop().into(userProfile);
                 }
                 else   {

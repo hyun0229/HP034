@@ -39,7 +39,11 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MyViewHo
             holder.leftChatView.setVisibility(View.GONE);
             holder.rightChatView.setVisibility(View.VISIBLE);
             holder.rightTextView.setVisibility(View.GONE);
+            // 이미지뷰의 레이아웃 파라미터를 설정
+            holder.rightImageView.setLayoutParams(new LinearLayout.LayoutParams(300, 300));
+            // 이미지를 로드하여 이미지뷰에 설정
             holder.rightImageView.setImageURI(message.getImageUri());
+
         } else{
             holder.rightChatView.setVisibility(View.GONE);
             holder.leftChatView.setVisibility(View.VISIBLE);

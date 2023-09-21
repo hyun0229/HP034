@@ -77,6 +77,10 @@ public class MainActivity extends AppCompatActivity {
         AlarmSettingsFragment alarmSettingsFragment =new AlarmSettingsFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,alarmSettingsFragment,"alarmSettingsFragment").commit();
     }
+    public void commit_ReportFragment(){
+        ReportFragment reportFragment =new ReportFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,reportFragment,"reportFragment").commit();
+    }
      /*private void getHashKey(){
         PackageInfo packageInfo = null;
         try {

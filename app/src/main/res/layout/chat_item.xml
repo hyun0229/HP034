@@ -8,18 +8,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/left_chat_view"
-        android:background="@drawable/rounded_corner"
-        android:backgroundTint="#E0F7FA"
-        android:padding="8dp"
-        android:layout_marginEnd="80dp"
         >
+        <View
+            android:layout_gravity="start|bottom"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/robot"
+            />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#FC5BFF"
+        android:padding="10dp"
+        android:layout_marginEnd="80dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/left_chat_text_view"
-            android:textColor="#99000000"
+            android:textColor="@color/white"
             android:textSize="18sp"
             />
+    </LinearLayout>
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -27,25 +41,26 @@
         android:id="@+id/right_chat_view"
         android:layout_alignParentEnd="true"
         android:background="@drawable/rounded_corner"
-        android:backgroundTint="#DCEDC8"
-        android:padding="8dp"
+        android:backgroundTint="#006FFD"
+        android:padding="10dp"
         android:layout_marginStart="80dp"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/right_chat_text_view"
-            android:textColor="#99000000"
+            android:textColor="@color/white"
             android:textSize="18sp"
             />
         <ImageView
             android:id="@+id/right_chat_image_view"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:contentDescription="Chat Image" />
 
     </LinearLayout>
+
 
 
 </RelativeLayout>

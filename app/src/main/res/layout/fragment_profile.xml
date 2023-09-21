@@ -164,6 +164,7 @@
                     android:layout_height="match_parent"
                     android:gravity="right">
                     <ImageButton
+                        android:id="@+id/btn_comitReport"
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/baseline_keyboard_arrow_right_24"/>

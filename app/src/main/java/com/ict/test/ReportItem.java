@@ -1,9 +1,11 @@
 package com.ict.test;
 
+import android.net.Uri;
+
 public class ReportItem {
     public String reportContent,reportDate;
-    public byte[] image;
-    public ReportItem(String reportContent,String reportDate, byte[] image){
+    public Uri image;
+    public ReportItem(String reportContent,String reportDate, Uri image){
         this.reportContent = reportContent;
         this.reportDate = reportDate;
         this.image =image;
@@ -15,7 +17,7 @@ public class ReportItem {
         return reportDate;
     }
 
-    public byte[] getImage() {
+    public Uri getImage() {
         return image;
     }
 }
